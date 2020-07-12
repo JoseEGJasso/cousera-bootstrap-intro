@@ -4,6 +4,7 @@
   "description": "Mi primer proyecto",
   "main": "index.html",
   "scripts": {
+    "dev": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -12,5 +13,8 @@
   },
   "author": "Jose Jasso",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/JoseEGJasso/curso-bootstrap#readme"
+  "homepage": "https://bitbucket.org/JoseEGJasso/curso-bootstrap#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
 }

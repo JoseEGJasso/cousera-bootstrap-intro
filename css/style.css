@@ -1,9 +1,7 @@
-*{
-    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+body{
+    background-color: #000000;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; 
 }
-
-body{ background-color: #000000; }
-
 
 .jumbotron{
     background-color: #000000;
@@ -11,7 +9,7 @@ body{ background-color: #000000; }
     color: white;
 }
 
-.container{
+.c-ini{
     text-align: center;
     color: dimgrey;  
 }
@@ -20,10 +18,15 @@ body{ background-color: #000000; }
 
 .cards-design > div li{ text-align: justify; }
 
-.row.title > h1{
-    color: seashell;
+.title > h1{
+    color: lightsteelblue;
     font-size: 34px;
     padding: 4px 0px 20px;
+}
+
+.info{
+    margin-top: 100px;
+    margin-bottom: 80px;
 }
 
 .comp-cards{
@@ -39,7 +42,17 @@ body{ background-color: #000000; }
     justify-content: space-evenly;
 }
 
-footer > div > .box-contacto > ul{
+hr{
+    background-color: darkslategrey;
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+
+footer > .c-footer > div > * > ul{
     list-style: none;
     padding-left: 0%;
+}
+
+footer > .c-footer > div > * > ul > li > *{
+    color: #212529;
 }

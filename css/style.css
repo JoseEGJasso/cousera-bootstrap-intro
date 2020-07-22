@@ -36,8 +36,6 @@ body{
 }
 
 .cards-design{
-    display: flex;
-    flex-wrap: wrap;
     font-size: 14px;
     justify-content: space-evenly;
 }

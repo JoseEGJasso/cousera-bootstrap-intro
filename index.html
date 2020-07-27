@@ -14,7 +14,7 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: rgb(24, 31, 46);">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: rgb(24, 31, 46);">
         <a class="navbar-brand" href="#">PCenter</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -61,7 +61,7 @@
 
     <div class="container c-bread">
         <nav aria-label="breadcrumb">
-            <ol class="breadcrumb" style="background-color: rgb(11, 11, 12);">
+            <ol class="breadcrumb">
                 <li class="breadcrumb-item active" aria-current="page">Home</li>
             </ol>
         </nav>
@@ -94,16 +94,18 @@
                     </p>
                 </p>
             </div>
-            
         </div>
 
-        <hr>
+        <img src="img/pc-gaming.jpg" class="img-fluid alt="Responsive image">
 
+        <hr>
+<!--
         <div class="row box-title">
             <h2 class="comp-title">Novedades</h2>
         </div>
+-->
 
-        <div class="d-flex flex-wrap cards-design">
+        <div class="d-flex flex-wrap cards-design pt-4">
             <div class="card comp-cards ">
                 <img src="./img/pc1.png" class="card-img-top">
                 <div class="card-body mb-0" >
@@ -218,7 +220,112 @@
                     </div>
                 </div>
             </div>
+            <div class="card comp-cards ">
+                <img src="./img/pc7.png" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">PC Gamer Xen 2060i</h5>
+                    <h6 class="card-subtitle pb-2"><b>Especificaciones:</b></h6>
+                    <ul>
+                        <li>Intel i5 9400F</li>
+                        <li>RTX 2060 Super 8GB</li>
+                        <li>RAM 16GB DDR4</li>
+                        <li>240GB SSD + 1TB HDD </li>
+                    </ul>
+                    <h4><b>$35,370</b></h4>
+                </div>
+                <div class="card-footer">
+                    <div class="button-position">
+                        <button type="button" class="btn btn-outline-info" style="width: 100%;">Mas info</button>
+                    </div>
+                </div>
+            </div>
         </div>
+
+
+        <div class="accordion" id="accordion-comparation">
+            <div class="card" style="background-color: rgb(34, 34, 34);">
+              <div class="card-header" id="head-1">
+                <h1 class="mb-0">
+                  <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color: #9ea0ac;">
+                    Comparacion
+                  </button>
+                </h1>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="head-1" data-parent="#accordion-comparation">
+                <div class="card-body">
+                    <div class="table-responsive-md">
+                        <table class="table table-bordered table-dark" style="background-color: rgb(20, 20, 20);">
+                            <thead>
+                                <th ></th>
+                                <th >Thanos 2080i X</th>
+                                <th >HP Omen Obelisk </th>
+                                <th >Corsair Vengeance A4100</th>
+                                <th >Skytech Supremacy</th>
+                                <th >PC Xtreme Gaming 1050i</th>
+                                <th >PC Xtreme Gaming 1660i</th>
+                                <th >PC Gamer Xen 2060i</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <th>Lanzamiento <ion-icon name="calendar-outline"></ion-icon></th>
+                                <td>Enero 2020</td>
+                                <td>Junio 2019</td>
+                                <td>Diciembre 2019</td>
+                                <td>Febrero 2020</td>
+                                <td>Abril 2019</td>
+                                <td>Mayo 2019</td>
+                                <td>Agosto 2019</td>
+                                </tr>
+                                <tr>
+                                <th>Memoria RAM <ion-icon name="hardware-chip-outline"></ion-icon></th>
+                                <td>32GB</td>
+                                <td>16GB</td>
+                                <td>8GB</td> 
+                                <td>32GB</td>
+                                <td>16GB</td>
+                                <td>16GB</td> 
+                                <td>16GB</td> 
+                                </tr>
+                                <tr>
+                                <th>Frecuencia del procesador <ion-icon name="alarm-outline"></ion-icon></th>
+                                <td>3.60 GHz - 5.00 GHz</td>
+                                <td>3.20 GHz - 4.60 GHz</td>
+                                <td>2.90 GHz - 4.10 GHz</td>
+                                <td>3.70 GHz - 4.30 GHz</td>
+                                <td>3.40 GHz - 3.90 GHz</td>
+                                <td>3.60 GHz - 4.20 GHz</td>
+                                <td>2.90 GHz - 4.10 GHz</td>
+                                </tr>
+                                <tr>
+                                <th>VRAM <ion-icon name="game-controller-outline"></ion-icon> </th>
+                                <td>11GB</td>
+                                <td>11GB</td>
+                                <td>6GB</td>
+                                <td>11GB</td>
+                                <td>4GB</td>
+                                <td>6GB</td>
+                                <td>8GB</td>
+                                </tr>
+                                <tr>
+                                <th>SSD <ion-icon name="disc-outline"></ion-icon> </th>
+                                <td>480GB</td>
+                                <td>256GB</td>
+                                <td>128GB</td>
+                                <td>500GB</td>
+                                <td>480GB</td>
+                                <td>480GB</td>
+                                <td>240GB</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+
     </div>
 
     <hr>

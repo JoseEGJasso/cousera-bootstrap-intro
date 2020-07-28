@@ -48,7 +48,7 @@ body{
     background-color:rgb(15, 15, 15);
     margin: 0 0px 30px 0px;
     padding: 10px 10px 10px 10px;
-    flex: 0 0 260px;
+    flex: 0 0 260px ;
     
 }
 
@@ -56,6 +56,11 @@ body{
     font-size: 14px;
     justify-content: space-evenly;
     
+}
+
+.component-card{
+    background-color: #161616;
+    color: #d6d6d6;
 }
 
 .c-footer{

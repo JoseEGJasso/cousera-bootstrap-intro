@@ -14,7 +14,7 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: rgb(24, 31, 46);">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: rgb(24, 31, 46);">
         <a class="navbar-brand" href="#">PCenter</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -64,199 +64,338 @@
         </nav>
     </div>
 
-
-
     <div class="container c-pcarmadas">
-        <div class="d-flex flex-wrap cards-design">
-            <div class="card comp-cards ">
-                <img src="../img/noimg.png" class="card-img-top">
-                <div class="card-body">
-                <h5 class="card-title">Thanos 2080i X</h5>
-                    <h6 class="card-subtitle pb-2"><b>Especificaciones:</b></h6>
-                    <ul>
-                        <li>Intel i9 9900K</li>
-                        <li>RTX 2080 Ti 11GB </li>
-                        <li>RAM 32GB DDR4</li>
-                        <li>480GB SSD + 2TB HDD</li>
-                    </ul>
-                    <div class="button-position">
-                        <button type="button" class="btn btn-outline-info">Mas info</button>
-                    </div>
-                </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="high-tab" data-toggle="pill" href="#pills-high" role="tab" aria-controls="high" aria-selected="true">Gama Alta</a>
+                    <a class="nav-link" id="medium-tab" data-toggle="pill" href="#pills-medium" role="tab" aria-controls="medium" aria-selected="false">Gama Media</a>
+                    <a class="nav-link" id="low-tab" data-toggle="pill" href="#pills-low" role="tab" aria-controls="low" aria-selected="false">Gama Baja</a>
+                  </div>
             </div>
-            <div class="card comp-cards ">
-                <img src="../img/noimg.png" class="card-img-top">
-                <div class="card-body">
-                <h5 class="card-title">HP Omen Obelisk </h5>
-                    <h6 class="card-subtitle pb-2"><b>Especificaciones:</b></h6>
-                    <ul>
-                        <li>Intel Core i7 8700 </li>
-                        <li>Nvidia GeForce RTX 2080</li>
-                        <li>16GB DDR4-2666</li>
-                        <li>256GB M.2 SSD + 2TB HDD</li>
-                    </ul>
-                    <div class="button-position">
-                        <button type="button" class="btn btn-outline-info">Mas info</button>
-                    </div>                    
-                </div>
-            </div>
-            <div class="card comp-cards">
-                <img src="../img/noimg.png" class="card-img-top">
-                <div class="card-body">
-                <h5 class="card-title">Corsair Vengeance A4100</h5>
-                    <h6 class="card-subtitle pb-2"><b>Especificaciones:</b></h6>
-                    <ul>
-                        <li>Intel Core i5 9400F </li>
-                        <li>Nvidia GTX 1660 6GB</li>
-                        <li>8GB DDR4-2400 |</li>
-                        <li>1TB HDD 7200RPM + 128GB SSD</li>
-                    </ul>
-                    <div class="button-position">
-                        <button type="button" class="btn btn-outline-info">Mas info</button>
+
+            <div class="col-md-9">
+                <div class="tab-content" id="tabContent">
+
+                    <!--Computadoras de gama alta-->
+
+                    <div class="tab-pane fade show active" id="pills-high" role="tabpanel" aria-labelledby="high-tab">
+                        <div class="d-flex flex-wrap cards-design">
+                            <div class="card comp-cards ">
+                                <img src="../img/noimg.png" class="card-img-top">
+                                <div class="card-body">
+                                <h5 class="card-title">Thanos 2080i X</h5>
+                                    <h6 class="card-subtitle pb-2"><b>Especificaciones:</b></h6>
+                                    <ul>
+                                        <li>Intel i9 9900K</li>
+                                        <li>RTX 2080 Ti 11GB </li>
+                                        <li>RAM 32GB DDR4</li>
+                                        <li>480GB SSD + 2TB HDD</li>
+                                    </ul>
+                                </div>
+                                <button type="button" class="btn btn-success">Comprar</button>
+                            </div>
+                            <div class="card comp-cards ">
+                                <img src="../img/noimg.png" class="card-img-top">
+                                <div class="card-body">
+                                <h5 class="card-title">HP Omen Obelisk </h5>
+                                    <h6 class="card-subtitle pb-2"><b>Especificaciones:</b></h6>
+                                    <ul>
+                                        <li>Intel Core i7 8700 </li>
+                                        <li>Nvidia GeForce RTX 2080</li>
+                                        <li>16GB DDR4-2666</li>
+                                        <li>256GB M.2 SSD + 2TB HDD</li>
+                                    </ul>                 
+                                </div>
+                                <button type="button" class="btn btn-success">Comprar</button>
+                            </div>
+                            <div class="card comp-cards ">
+                                <img src="../img/noimg.png" class="card-img-top">
+                                <div class="card-body">
+                                <h5 class="card-title">Thanos 2080i X</h5>
+                                    <h6 class="card-subtitle pb-2"><b>Especificaciones:</b></h6>
+                                    <ul>
+                                        <li>Intel i9 9900K</li>
+                                        <li>RTX 2080 Ti 11GB </li>
+                                        <li>RAM 32GB DDR4</li>
+                                        <li>480GB SSD + 2TB HDD</li>
+                                    </ul>
+                                </div>
+                                <button type="button" class="btn btn-success">Comprar</button>
+                            </div>
+                            <div class="card comp-cards ">
+                                <img src="../img/noimg.png" class="card-img-top">
+                                <div class="card-body">
+                                <h5 class="card-title">HP Omen Obelisk </h5>
+                                    <h6 class="card-subtitle pb-2"><b>Especificaciones:</b></h6>
+                                    <ul>
+                                        <li>Intel Core i7 8700 </li>
+                                        <li>Nvidia GeForce RTX 2080</li>
+                                        <li>16GB DDR4-2666</li>
+                                        <li>256GB M.2 SSD + 2TB HDD</li>
+                                    </ul>                 
+                                </div>
+                                <button type="button" class="btn btn-success">Comprar</button>
+                            </div>
+                            <div class="card comp-cards ">
+                                <img src="../img/noimg.png" class="card-img-top">
+                                <div class="card-body">
+                                <h5 class="card-title">Thanos 2080i X</h5>
+                                    <h6 class="card-subtitle pb-2"><b>Especificaciones:</b></h6>
+                                    <ul>
+                                        <li>Intel i9 9900K</li>
+                                        <li>RTX 2080 Ti 11GB </li>
+                                        <li>RAM 32GB DDR4</li>
+                                        <li>480GB SSD + 2TB HDD</li>
+                                    </ul>
+                                </div>
+                                <button type="button" class="btn btn-success">Comprar</button>
+                            </div>
+                            <div class="card comp-cards ">
+                                <img src="../img/noimg.png" class="card-img-top">
+                                <div class="card-body">
+                                <h5 class="card-title">HP Omen Obelisk </h5>
+                                    <h6 class="card-subtitle pb-2"><b>Especificaciones:</b></h6>
+                                    <ul>
+                                        <li>Intel Core i7 8700 </li>
+                                        <li>Nvidia GeForce RTX 2080</li>
+                                        <li>16GB DDR4-2666</li>
+                                        <li>256GB M.2 SSD + 2TB HDD</li>
+                                    </ul>                 
+                                </div>
+                                <button type="button" class="btn btn-success">Comprar</button>
+                            </div>
+                            <div class="card comp-cards ">
+                                <img src="../img/noimg.png" class="card-img-top">
+                                <div class="card-body">
+                                <h5 class="card-title">Thanos 2080i X</h5>
+                                    <h6 class="card-subtitle pb-2"><b>Especificaciones:</b></h6>
+                                    <ul>
+                                        <li>Intel i9 9900K</li>
+                                        <li>RTX 2080 Ti 11GB </li>
+                                        <li>RAM 32GB DDR4</li>
+                                        <li>480GB SSD + 2TB HDD</li>
+                                    </ul>
+                                </div>
+                                <button type="button" class="btn btn-success">Comprar</button>
+                            </div>
+                            <div class="card comp-cards ">
+                                <img src="../img/noimg.png" class="card-img-top">
+                                <div class="card-body">
+                                <h5 class="card-title">HP Omen Obelisk </h5>
+                                    <h6 class="card-subtitle pb-2"><b>Especificaciones:</b></h6>
+                                    <ul>
+                                        <li>Intel Core i7 8700 </li>
+                                        <li>Nvidia GeForce RTX 2080</li>
+                                        <li>16GB DDR4-2666</li>
+                                        <li>256GB M.2 SSD + 2TB HDD</li>
+                                    </ul>                 
+                                </div>
+                                <button type="button" class="btn btn-success">Comprar</button>
+                            </div>
+                            <div class="card comp-cards ">
+                                <img src="../img/noimg.png" class="card-img-top">
+                                <div class="card-body">
+                                <h5 class="card-title">Thanos 2080i X</h5>
+                                    <h6 class="card-subtitle pb-2"><b>Especificaciones:</b></h6>
+                                    <ul>
+                                        <li>Intel i9 9900K</li>
+                                        <li>RTX 2080 Ti 11GB </li>
+                                        <li>RAM 32GB DDR4</li>
+                                        <li>480GB SSD + 2TB HDD</li>
+                                    </ul>
+                                </div>
+                                <button type="button" class="btn btn-success">Comprar</button>
+                            </div>
+                        </div>
                     </div>
-                </div>    
-            </div>
-            <div class="card comp-cards ">
-                <img src="../img/noimg.png" class="card-img-top">
-                <div class="card-body">
-                <h5 class="card-title">SkyTech Supremacy</h5>
-                    <h6 class="card-subtitle"><b>Especificaciones:</b></h6>
-                    <ul>
-                        <li>AMD Ryzen 7 2700X </li>
-                        <li>RTX 2080 Ti </li>
-                        <li>32GB DDR4-3200</li>
-                        <li>500GB NVMe SSD + 2TB HDD</li>
-                    </ul>
-                    <div class="button-position">
-                        <button type="button" class="btn btn-outline-info">Mas info</button>
+
+                    <!--Computadoras de gama media-->
+
+                    <div class="tab-pane fade" id="pills-medium" role="tabpanel" aria-labelledby="medium-tab">
+                        <div class="d-flex flex-wrap cards-design">
+                            <div class="card comp-cards ">
+                                <img src="../img/noimg.png" class="card-img-top">
+                                <div class="card-body">
+                                <h5 class="card-title">Thanos 2080i X</h5>
+                                    <h6 class="card-subtitle pb-2"><b>Especificaciones:</b></h6>
+                                    <ul>
+                                        <li>Intel i9 9900K</li>
+                                        <li>RTX 2080 Ti 11GB </li>
+                                        <li>RAM 32GB DDR4</li>
+                                        <li>480GB SSD + 2TB HDD</li>
+                                    </ul>
+                                </div>
+                                <button type="button" class="btn btn-success">Comprar</button>
+                            </div>
+                            <div class="card comp-cards ">
+                                <img src="../img/noimg.png" class="card-img-top">
+                                <div class="card-body">
+                                <h5 class="card-title">HP Omen Obelisk </h5>
+                                    <h6 class="card-subtitle pb-2"><b>Especificaciones:</b></h6>
+                                    <ul>
+                                        <li>Intel Core i7 8700 </li>
+                                        <li>Nvidia GeForce RTX 2080</li>
+                                        <li>16GB DDR4-2666</li>
+                                        <li>256GB M.2 SSD + 2TB HDD</li>
+                                    </ul>                 
+                                </div>
+                                <button type="button" class="btn btn-success">Comprar</button>
+                            </div>
+                            <div class="card comp-cards ">
+                                <img src="../img/noimg.png" class="card-img-top">
+                                <div class="card-body">
+                                <h5 class="card-title">Thanos 2080i X</h5>
+                                    <h6 class="card-subtitle pb-2"><b>Especificaciones:</b></h6>
+                                    <ul>
+                                        <li>Intel i9 9900K</li>
+                                        <li>RTX 2080 Ti 11GB </li>
+                                        <li>RAM 32GB DDR4</li>
+                                        <li>480GB SSD + 2TB HDD</li>
+                                    </ul>
+                                </div>
+                                <button type="button" class="btn btn-success">Comprar</button>
+                            </div>
+                            <div class="card comp-cards ">
+                                <img src="../img/noimg.png" class="card-img-top">
+                                <div class="card-body">
+                                <h5 class="card-title">HP Omen Obelisk </h5>
+                                    <h6 class="card-subtitle pb-2"><b>Especificaciones:</b></h6>
+                                    <ul>
+                                        <li>Intel Core i7 8700 </li>
+                                        <li>Nvidia GeForce RTX 2080</li>
+                                        <li>16GB DDR4-2666</li>
+                                        <li>256GB M.2 SSD + 2TB HDD</li>
+                                    </ul>                 
+                                </div>
+                                <button type="button" class="btn btn-success">Comprar</button>
+                            </div>
+                            <div class="card comp-cards ">
+                                <img src="../img/noimg.png" class="card-img-top">
+                                <div class="card-body">
+                                <h5 class="card-title">Thanos 2080i X</h5>
+                                    <h6 class="card-subtitle pb-2"><b>Especificaciones:</b></h6>
+                                    <ul>
+                                        <li>Intel i9 9900K</li>
+                                        <li>RTX 2080 Ti 11GB </li>
+                                        <li>RAM 32GB DDR4</li>
+                                        <li>480GB SSD + 2TB HDD</li>
+                                    </ul>
+                                </div>
+                                <button type="button" class="btn btn-success">Comprar</button>
+                            </div>
+                            <div class="card comp-cards ">
+                                <img src="../img/noimg.png" class="card-img-top">
+                                <div class="card-body">
+                                <h5 class="card-title">HP Omen Obelisk </h5>
+                                    <h6 class="card-subtitle pb-2"><b>Especificaciones:</b></h6>
+                                    <ul>
+                                        <li>Intel Core i7 8700 </li>
+                                        <li>Nvidia GeForce RTX 2080</li>
+                                        <li>16GB DDR4-2666</li>
+                                        <li>256GB M.2 SSD + 2TB HDD</li>
+                                    </ul>                 
+                                </div>
+                                <button type="button" class="btn btn-success">Comprar</button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="card comp-cards ">
-                <img src="../img/noimg.png" class="card-img-top">
-                <div class="card-body">
-                    <h5 class="card-title">PC Xtreme Gaming 1050i</h5>
-                    <h6 class="card-subtitle"><b>Especificaciones:</b></h6>
-                    <ul>
-                        <li>AMD RYZEN 5 2600</li>
-                        <li>NVIDIA GeForce GTX 1050 Ti</li>
-                        <li>RAM 16GB DDR4 </li>
-                        <li>480GB SSD + 1TB HDD</li>
-                    </ul>
-                    <div class="button-position">
-                        <button type="button" class="btn btn-outline-info">Mas info</button>
+
+                    <!--Computadoras de gama baja-->
+
+                    <div class="tab-pane fade" id="pills-low" role="tabpanel" aria-labelledby="low-tab">
+                        <div class="d-flex flex-wrap cards-design">
+                            <div class="card comp-cards ">
+                                <img src="../img/noimg.png" class="card-img-top">
+                                <div class="card-body">
+                                <h5 class="card-title">Thanos 2080i X</h5>
+                                    <h6 class="card-subtitle pb-2"><b>Especificaciones:</b></h6>
+                                    <ul>
+                                        <li>Intel i9 9900K</li>
+                                        <li>RTX 2080 Ti 11GB </li>
+                                        <li>RAM 32GB DDR4</li>
+                                        <li>480GB SSD + 2TB HDD</li>
+                                    </ul>
+                                </div>
+                                <button type="button" class="btn btn-success">Comprar</button>
+                            </div>
+                            <div class="card comp-cards ">
+                                <img src="../img/noimg.png" class="card-img-top">
+                                <div class="card-body">
+                                <h5 class="card-title">HP Omen Obelisk </h5>
+                                    <h6 class="card-subtitle pb-2"><b>Especificaciones:</b></h6>
+                                    <ul>
+                                        <li>Intel Core i7 8700 </li>
+                                        <li>Nvidia GeForce RTX 2080</li>
+                                        <li>16GB DDR4-2666</li>
+                                        <li>256GB M.2 SSD + 2TB HDD</li>
+                                    </ul>                 
+                                </div>
+                                <button type="button" class="btn btn-success">Comprar</button>
+                            </div>
+                            <div class="card comp-cards ">
+                                <img src="../img/noimg.png" class="card-img-top">
+                                <div class="card-body">
+                                <h5 class="card-title">Thanos 2080i X</h5>
+                                    <h6 class="card-subtitle pb-2"><b>Especificaciones:</b></h6>
+                                    <ul>
+                                        <li>Intel i9 9900K</li>
+                                        <li>RTX 2080 Ti 11GB </li>
+                                        <li>RAM 32GB DDR4</li>
+                                        <li>480GB SSD + 2TB HDD</li>
+                                    </ul>
+                                </div>
+                                <button type="button" class="btn btn-success">Comprar</button>
+                            </div>
+                            <div class="card comp-cards ">
+                                <img src="../img/noimg.png" class="card-img-top">
+                                <div class="card-body">
+                                <h5 class="card-title">HP Omen Obelisk </h5>
+                                    <h6 class="card-subtitle pb-2"><b>Especificaciones:</b></h6>
+                                    <ul>
+                                        <li>Intel Core i7 8700 </li>
+                                        <li>Nvidia GeForce RTX 2080</li>
+                                        <li>16GB DDR4-2666</li>
+                                        <li>256GB M.2 SSD + 2TB HDD</li>
+                                    </ul>                 
+                                </div>
+                                <button type="button" class="btn btn-success">Comprar</button>
+                            </div>
+                            <div class="card comp-cards ">
+                                <img src="../img/noimg.png" class="card-img-top">
+                                <div class="card-body">
+                                <h5 class="card-title">Thanos 2080i X</h5>
+                                    <h6 class="card-subtitle pb-2"><b>Especificaciones:</b></h6>
+                                    <ul>
+                                        <li>Intel i9 9900K</li>
+                                        <li>RTX 2080 Ti 11GB </li>
+                                        <li>RAM 32GB DDR4</li>
+                                        <li>480GB SSD + 2TB HDD</li>
+                                    </ul>
+                                </div>
+                                <button type="button" class="btn btn-success">Comprar</button>
+                            </div>
+                            <div class="card comp-cards ">
+                                <img src="../img/noimg.png" class="card-img-top">
+                                <div class="card-body">
+                                <h5 class="card-title">HP Omen Obelisk </h5>
+                                    <h6 class="card-subtitle pb-2"><b>Especificaciones:</b></h6>
+                                    <ul>
+                                        <li>Intel Core i7 8700 </li>
+                                        <li>Nvidia GeForce RTX 2080</li>
+                                        <li>16GB DDR4-2666</li>
+                                        <li>256GB M.2 SSD + 2TB HDD</li>
+                                    </ul>                 
+                                </div>
+                                <button type="button" class="btn btn-success">Comprar</button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="card comp-cards ">
-                <img src="../img/noimg.png" class="card-img-top">
-                <h5 class="card-title">PC Xtreme Gaming 1660i</h5>
-                <div class="card-body">
-                    <h6 class="card-subtitle"><b>Especificaciones:</b></h6>
-                    <div class="card-text">
-                    <ul>
-                        <li>AMD Ryzen 5 3600</li>
-                        <li>GeForce® GTX 1660 NVIDIA 6GB VRAM</li>
-                        <li>RAM 16GB DDR4</li>
-                        <li>480GB SSD + 1TB HDD </li>
-                    </ul>
-                    </div>
-                    <div class="button-position">
-                        <button type="button" class="btn btn-outline-info">Mas info</button>
-                    </div>
-                </div>   
-            </div>
-            <div class="card comp-cards ">
-                <img src="../img/noimg.png" class="card-img-top">
-                <h5 class="card-title">PC Xtreme Gaming 1660i</h5>
-                <div class="card-body">
-                    <h6 class="card-subtitle"><b>Especificaciones:</b></h6>
-                    <div class="card-text">
-                    <ul>
-                        <li>AMD Ryzen 5 3600</li>
-                        <li>GeForce® GTX 1660 NVIDIA 6GB VRAM</li>
-                        <li>RAM 16GB DDR4</li>
-                        <li>480GB SSD + 1TB HDD </li>
-                    </ul>
-                    </div>
-                    <div class="button-position">
-                        <button type="button" class="btn btn-outline-info">Mas info</button>
-                    </div>
-                </div>   
-            </div>
-            <div class="card comp-cards ">
-                <img src="../img/noimg.png" class="card-img-top">
-                <h5 class="card-title">PC Xtreme Gaming 1660i</h5>
-                <div class="card-body">
-                    <h6 class="card-subtitle"><b>Especificaciones:</b></h6>
-                    <div class="card-text">
-                    <ul>
-                        <li>AMD Ryzen 5 3600</li>
-                        <li>GeForce® GTX 1660 NVIDIA 6GB VRAM</li>
-                        <li>RAM 16GB DDR4</li>
-                        <li>480GB SSD + 1TB HDD </li>
-                    </ul>
-                    </div>
-                    <div class="button-position">
-                        <button type="button" class="btn btn-outline-info">Mas info</button>
-                    </div>
-                </div>   
-            </div>
-            <div class="card comp-cards ">
-                <img src="../img/noimg.png" class="card-img-top">
-                <h5 class="card-title">PC Xtreme Gaming 1660i</h5>
-                <div class="card-body">
-                    <h6 class="card-subtitle"><b>Especificaciones:</b></h6>
-                    <div class="card-text">
-                    <ul>
-                        <li>AMD Ryzen 5 3600</li>
-                        <li>GeForce® GTX 1660 NVIDIA 6GB VRAM</li>
-                        <li>RAM 16GB DDR4</li>
-                        <li>480GB SSD + 1TB HDD </li>
-                    </ul>
-                    </div>
-                    <div class="button-position">
-                        <button type="button" class="btn btn-outline-info">Mas info</button>
-                    </div>
-                </div>   
-            </div>
-            <div class="card comp-cards ">
-                <img src="../img/noimg.png" class="card-img-top">
-                <h5 class="card-title">PC Xtreme Gaming 1660i</h5>
-                <div class="card-body">
-                    <h6 class="card-subtitle"><b>Especificaciones:</b></h6>
-                    <div class="card-text">
-                    <ul>
-                        <li>AMD Ryzen 5 3600</li>
-                        <li>GeForce® GTX 1660 NVIDIA 6GB VRAM</li>
-                        <li>RAM 16GB DDR4</li>
-                        <li>480GB SSD + 1TB HDD </li>
-                    </ul>
-                    </div>
-                    <div class="button-position">
-                        <button type="button" class="btn btn-outline-info">Mas info</button>
-                    </div>
-                </div>   
-            </div>
-            <div class="card comp-cards ">
-                <img src="../img/noimg.png" class="card-img-top">
-                <h5 class="card-title">PC Xtreme Gaming 1660i</h5>
-                <div class="card-body">
-                    <h6 class="card-subtitle"><b>Especificaciones:</b></h6>
-                    <div class="card-text">
-                    <ul>
-                        <li>AMD Ryzen 5 3600</li>
-                        <li>GeForce® GTX 1660 NVIDIA 6GB VRAM</li>
-                        <li>RAM 16GB DDR4</li>
-                        <li>480GB SSD + 1TB HDD </li>
-                    </ul>
-                    </div>
-                    <div class="button-position">
-                        <button type="button" class="btn btn-outline-info">Mas info</button>
-                    </div>
-                </div>   
+                  </div>
             </div>
         </div>
+
+
     </div>
 
     <hr>

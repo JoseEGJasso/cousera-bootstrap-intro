@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <!-- build:css dist/index.css -->
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- endbuild -->
     <!--IMPORTANTE. Agregué otra librería de iconos, se llama ionicons y está en la seccion de scripts
     (al final de la pagina)-->
 
@@ -375,7 +377,7 @@
 
         <!--Suscripcion al newsletter-->
         <p class="mt-3">Suscribite a nuestro newsletter y disfruta de grandes beneficios</p>
-        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#buttonSuscribe">¡Suscribite aqui!</button>
+        <button id="susBtn" type="button" class="btn btn-info" data-toggle="modal" data-target="#buttonSuscribe">¡Suscribite aqui!</button>
 
     </div>
 
@@ -444,22 +446,40 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- build:js dist/index.js-->
     <script src="node_modules/jquery/dist/jquery.min.js" ></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js" ></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <!--Ionicons library-->
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-    <!--Tooltip function-->
+    <!--Tooltip function and carousel timer script-->
     <script>
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()
-        })
-    </script>
-    <!--Carousel timer script-->
-    <script>
+        });
         $('.carousel').carousel({
             interval: 4000
-        })
+        });
     </script>
+    <script>
+        $('#buttonSuscribe').on('show.bs.modal', function (e) {
+            $('#susBtn').removeClass('btn btn-info').addClass('btn btn-secondary');
+            $('#susBtn').prop('disabled',true);
+            console.log('Se empieza a abrir modal');
+        });
+        $('#buttonSuscribe').on('show.bs.modal', function (e) {
+            console.log('Se termina de abrir modal');
+        });
+        
+        $('#buttonSuscribe').on('hide.bs.modal', function (e) {
+            $('#susBtn').removeClass('btn btn-secondary').addClass('btn btn-info');
+            $('#susBtn').prop('disabled',false);
+            console.log('Se empieza a cerrar modal');
+        });
+        $('#buttonSuscribe').on('hide.bs.modal', function (e) {
+            console.log('Se termina de cerrar modal');
+        });
+    </script>
+    <!-- endbuild -->
   </body>
 </html>
